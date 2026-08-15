@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "AutoPaper — Local Markdown Reader"
+  },
+  "extensionDescription": {
+    "message": "Turn local Markdown files into calm, readable pages. Edit and preview Markdown offline."
+  },
+  "actionTitle": {
+    "message": "Open AutoPaper Markdown editor"
+  }
+}

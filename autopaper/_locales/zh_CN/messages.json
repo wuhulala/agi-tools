@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "AutoPaper — 本地 Markdown 阅读器"
+  },
+  "extensionDescription": {
+    "message": "将本地 Markdown 自动排版为清爽阅读页，也可离线编辑和实时预览。"
+  },
+  "actionTitle": {
+    "message": "打开 AutoPaper Markdown 编辑器"
+  }
+}

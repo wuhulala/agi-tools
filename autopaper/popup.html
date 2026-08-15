@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoPaper Markdown Reader</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="AutoPaper Markdown Reader">
+          <span class="brand-mark">M<span>↓</span></span>
+          <div>
+            <strong>AutoPaper</strong>
+            <small>MARKDOWN PREVIEW</small>
+          </div>
+        </div>
+
+        <div class="actions">
+          <input id="fileInput" type="file" accept=".md,.markdown,text/markdown,text/plain" hidden />
+          <button id="openFile" class="button button-quiet" type="button">打开文件</button>
+          <button id="clearEditor" class="button button-quiet" type="button">清空</button>
+          <button id="copyHtml" class="button button-primary" type="button">复制 HTML</button>
+        </div>
+      </header>
+
+      <nav class="mobile-tabs" aria-label="视图切换">
+        <button class="tab is-active" type="button" data-view="editor">编辑</button>
+        <button class="tab" type="button" data-view="preview">预览</button>
+      </nav>
+
+      <section class="workspace" data-mobile-view="editor">
+        <div class="pane editor-pane">
+          <div class="pane-label">
+            <span>MARKDOWN</span>
+            <span id="wordCount">0 字</span>
+          </div>
+          <textarea id="markdownInput" spellcheck="false" aria-label="Markdown 输入"></textarea>
+        </div>
+
+        <div class="divider" aria-hidden="true"><span></span></div>
+
+        <div class="pane preview-pane">
+          <div class="pane-label">
+            <span>PREVIEW</span>
+            <span id="saveState">已保存</span>
+          </div>
+          <article id="preview" class="markdown-body"></article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>内容仅保存在本机</span>
+        <span><kbd>⌘</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> 清空</span>
+      </footer>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </main>
+
+    <script src="markdown.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
