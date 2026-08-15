@@ -10,7 +10,7 @@ Chrome / Edge Manifest V3 扩展。直接把本地 Markdown 文件排版为带�
 
 - 无账号、广告、分析脚本或远程代码；
 - Markdown 内容和草稿只在当前浏览器处理；
-- 支持标题、列表、引用、代码块、表格、链接、图片与离线 Mermaid 图表；
+- 支持标题、列表、引用、代码块、表格、链接、图片与离线 Mermaid 图表；图表可缩放、全屏查看并导出 SVG/PNG；
 - 包含中英文界面、测试、图标和 Chrome Web Store 素材。
 
 安装方法见 [`autopaper/README.md`](autopaper/README.md)。

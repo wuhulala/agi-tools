@@ -182,8 +182,38 @@ button { color: inherit; }
   background: rgba(255, 253, 247, 0.78);
 }
 .markdown-body .autopaper-mermaid svg { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.markdown-body .autopaper-mermaid-toolbar { display: flex; justify-content: flex-end; gap: 5px; margin-bottom: 9px; }
+.markdown-body .autopaper-mermaid-toolbar button,
+.autopaper-mermaid-viewer button {
+  padding: 5px 7px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper);
+  font: 10px "Noto Sans SC", sans-serif;
+  cursor: pointer;
+}
+.markdown-body .autopaper-mermaid-toolbar button:hover,
+.autopaper-mermaid-viewer button:hover { color: var(--accent-dark); border-color: var(--accent); }
 .markdown-body .autopaper-mermaid-error { color: var(--accent-dark); font: 12px/1.5 "Noto Sans SC", sans-serif; }
 .markdown-body .autopaper-mermaid-error pre { margin-bottom: 0; text-align: left; }
+.autopaper-mermaid-viewer {
+  width: min(94vw, 1400px);
+  height: min(92vh, 960px);
+  padding: 0;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--paper);
+}
+.autopaper-mermaid-viewer:fullscreen { width: 100vw; height: 100vh; max-width: none; max-height: none; border: 0; border-radius: 0; }
+.autopaper-mermaid-viewer::backdrop { background: rgba(25, 25, 22, 0.76); backdrop-filter: blur(5px); }
+.autopaper-mermaid-viewer-bar { display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 8px 14px; border-bottom: 1px solid var(--line); }
+.autopaper-mermaid-viewer-bar strong { font: 10px "Courier New", monospace; letter-spacing: 0.14em; }
+.autopaper-mermaid-viewer-bar > div { display: flex; align-items: center; gap: 6px; }
+.autopaper-mermaid-zoom-value { min-width: 42px; color: var(--muted); font: 10px "Courier New", monospace; text-align: center; }
+.autopaper-mermaid-viewer-canvas { display: grid; place-items: center; height: calc(100% - 52px); padding: 28px; overflow: auto; background: var(--paper); }
+.autopaper-mermaid-viewer-canvas svg { display: block; margin: auto; }
 .empty-state { display: grid; place-items: center; height: 100%; color: var(--muted); text-align: center; }
 .empty-state span { display: block; margin-bottom: 8px; color: var(--accent); font-size: 29px; }
 
