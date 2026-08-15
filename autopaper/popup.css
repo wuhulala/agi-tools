@@ -173,6 +173,17 @@ button { color: inherit; }
 .markdown-body th, .markdown-body td { padding: 7px 9px; border: 1px solid var(--line); text-align: left; }
 .markdown-body th { background: var(--paper-deep); }
 .markdown-body img { max-width: 100%; border-radius: 3px; }
+.markdown-body .autopaper-mermaid {
+  margin: 1.2em 0;
+  padding: 15px 12px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(255, 253, 247, 0.78);
+}
+.markdown-body .autopaper-mermaid svg { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.markdown-body .autopaper-mermaid-error { color: var(--accent-dark); font: 12px/1.5 "Noto Sans SC", sans-serif; }
+.markdown-body .autopaper-mermaid-error pre { margin-bottom: 0; text-align: left; }
 .empty-state { display: grid; place-items: center; height: 100%; color: var(--muted); text-align: center; }
 .empty-state span { display: block; margin-bottom: 8px; color: var(--accent); font-size: 29px; }
 

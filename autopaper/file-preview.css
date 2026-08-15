@@ -146,6 +146,18 @@
 .paper-article th, .paper-article td { padding: 9px 12px; border: 1px solid var(--paper-line); text-align: left; }
 .paper-article th { background: #eee8dc; }
 .paper-article img { max-width: 100%; height: auto; border-radius: 4px; }
+.paper-article .autopaper-mermaid {
+  margin: 2em 0;
+  padding: clamp(18px, 4vw, 34px);
+  overflow-x: auto;
+  border: 1px solid var(--paper-line);
+  border-radius: 4px;
+  background: rgba(255, 250, 240, 0.72);
+  box-shadow: 6px 6px 0 rgba(217, 209, 195, 0.72);
+}
+.paper-article .autopaper-mermaid svg { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.paper-article .autopaper-mermaid-error { color: #a73d27; font: 13px/1.6 "Noto Sans SC", sans-serif; }
+.paper-article .autopaper-mermaid-error pre { margin-bottom: 0; text-align: left; }
 .paper-source { min-height: 70vh; margin-top: 0; color: #e7e3d9; }
 .paper-end { display: flex; align-items: center; justify-content: space-between; margin-top: 70px; padding-top: 18px; color: var(--paper-muted); border-top: 1px solid var(--paper-line); font: 10px "Courier New", monospace; letter-spacing: 0.17em; }
 

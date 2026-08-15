@@ -58,6 +58,7 @@ console.log(idea);
     preview.innerHTML = markdown.trim()
       ? window.MarkdownPreview.parseMarkdown(markdown)
       : '<div class="empty-state"><div><span>✦</span>开始写点什么吧</div></div>';
+    window.AutoPaperMermaid.render(preview);
     const count = markdown.replace(/\s/g, "").length;
     wordCount.textContent = `${count} 字`;
   }

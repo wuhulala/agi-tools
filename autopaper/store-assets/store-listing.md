@@ -21,7 +21,7 @@ Open any `.md` or `.markdown` file to get:
 - an automatically generated table of contents;
 - reading progress, source view, and print support;
 - frontmatter hidden from the reading view;
-- headings, lists, quotes, code blocks, tables, links, and images.
+- headings, lists, quotes, code blocks, tables, links, images, and Mermaid diagrams.
 
 Click the AutoPaper toolbar icon when you want a lightweight editor with live preview, local draft saving, file import, and rendered HTML copy.
 
@@ -33,7 +33,7 @@ AutoPaper works offline. It has no account, analytics, ads, remote scripts, or d
 
 ## 中文说明
 
-AutoPaper 把浏览器中直接打开的 `.md` 或 `.markdown` 文件自动排版为适合长文阅读的页面，提供目录、阅读进度、源码切换、打印，并隐藏 Obsidian frontmatter。
+AutoPaper 把浏览器中直接打开的 `.md` 或 `.markdown` 文件自动排版为适合长文阅读的页面，提供目录、阅读进度、源码切换、打印、Mermaid 图表渲染，并隐藏 Obsidian frontmatter。
 
 点击工具栏图标，还可使用轻量双栏编辑器：实时预览、打开本地文件、自动保存草稿并复制渲染后的 HTML。
 

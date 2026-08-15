@@ -33,4 +33,8 @@ assert.doesNotMatch(unsafe, /href="javascript:/);
 const relative = parseMarkdown("[本地笔记](./下一篇.md)");
 assert.match(relative, /href="\.\/下一篇\.md"/);
 
+const mermaid = parseMarkdown("```mermaid\nflowchart LR\n  A --> B\n```");
+assert.match(mermaid, /<code class="language-mermaid">/);
+assert.match(mermaid, /flowchart LR/);
+
 console.log("markdown parser tests passed");

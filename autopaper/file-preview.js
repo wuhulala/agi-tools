@@ -64,6 +64,7 @@
   const source = document.querySelector("#paperSource");
   const toc = document.querySelector("#paperToc");
   article.innerHTML = window.MarkdownPreview.parseMarkdown(content);
+  window.AutoPaperMermaid.render(article);
   source.textContent = rawSource;
 
   const usedIds = new Set();

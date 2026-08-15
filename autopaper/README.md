@@ -23,9 +23,21 @@
 - 六级标题、段落、粗体、斜体、删除线、行内代码
 - 有序/无序列表、任务列表、引用、分隔线
 - 代码块、链接、图片、简单表格
+- Mermaid 流程图、时序图、状态图等 fenced diagram；例如：
+
+  ````markdown
+  ```mermaid
+  flowchart LR
+    A[Markdown] --> B[AutoPaper]
+  ```
+  ````
 
 所有解析都在浏览器本地完成。草稿通过 `chrome.storage.local` 保存在当前浏览器配置中。
 
 ## 隐私
 
 AutoPaper 不收集、上传、出售或共享任何用户数据。Markdown 内容只在浏览器本地解析；弹窗草稿只保存在当前设备的 `chrome.storage.local`。完整说明见 [`store-assets/privacy-policy.md`](store-assets/privacy-policy.md)。
+
+## 第三方组件
+
+离线 Mermaid 渲染使用 `mermaid@11.16.0`，遵循 MIT License，固定副本及许可证位于 `vendor/`。
