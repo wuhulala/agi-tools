@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extensionName__",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "__MSG_extensionDescription__",
   "default_locale": "en",
   "icons": {
@@ -23,6 +23,12 @@
   "content_scripts": [
     {
       "matches": ["file:///*"],
+      "js": ["directory-preview.js"],
+      "css": ["directory-preview.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["file:///*.md", "file:///*.markdown"],
       "js": ["vendor/mermaid.min.js", "markdown.js", "mermaid-renderer.js", "file-preview.js"],
       "css": ["file-preview.css"],
       "run_at": "document_idle"
